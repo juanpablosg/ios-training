@@ -10,7 +10,14 @@
  */
 
 // TODO: Write solution here
+let myAge = 27
 
+if myAge >= 13 && myAge <= 19 {
+    print("Teenager")
+}
+else {
+    print("Not a teenager :(")
+}
 
 /*:
  ## Challenge 2
@@ -21,5 +28,7 @@
 
 // TODO: Write solution here
 
+let teenagerName : String
 
+teenagerName = myAge >= 13 && myAge <= 19 ? "Juan Pablo" : "Not me!"
 //: [⇒ Next: 07 - Optionals](@next)
