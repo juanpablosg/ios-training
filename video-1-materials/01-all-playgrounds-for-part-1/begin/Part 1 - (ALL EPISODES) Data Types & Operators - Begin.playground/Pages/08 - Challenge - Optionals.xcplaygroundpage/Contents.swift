@@ -14,6 +14,10 @@
 // TODO: Write solution here
 let hasAllergies = true
 
+var dogName: String?
+
+dogName = hasAllergies == true ? nil : "Mango"
+
 /*:
  ## Challenge 2
  
@@ -24,9 +28,11 @@ let hasAllergies = true
 
 // TODO: Write solution here
 
+let parsedInt = Int("10")
 
-
-
+/*It is an optional because Swift creates it to be saved.
+ I don't really know why.
+ */
 /*:
  ## Challenge 3
  
@@ -37,4 +43,6 @@ let hasAllergies = true
  */
 
 // TODO: Write solution here
+let newParsedInt = Int("cat")
 
+//The value is nil because the String cat cannot be parsed into an Integer.

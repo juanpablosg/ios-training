@@ -20,6 +20,18 @@ if let petName = petName,
 } else {
     print("No pet name or age")
 }
+print(petName)
+print(petAge)
+petName = "Manzana"
+func test() {
+    guard let petName = petName,
+          let catAge = petAge else {
+        print("Entró al else")
+        return
+    }
+    print("The pet is \(petName) and they are \(catAge)")
+}
+test()
 
 var optionalInt: Int? = nil //10
 var requiredResult = optionalInt ?? 0
