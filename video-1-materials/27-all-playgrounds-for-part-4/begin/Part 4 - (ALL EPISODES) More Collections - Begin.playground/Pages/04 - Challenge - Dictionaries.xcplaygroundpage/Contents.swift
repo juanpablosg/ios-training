@@ -15,7 +15,14 @@
  As part of the initialization, assign each of those keys a value that corresponds to your own personal information.
  
  */
-
+var personalInfo = [
+    "name" : "Juan Pablo",
+    "profession" : "Technical Writer",
+    "country" : "México",
+    "city" : "Zapopan"
+]
+print(personalInfo)
+print("------------")
 
 /*:
  
@@ -28,7 +35,11 @@
  - Add a `state` key to the dictionary and assign it the value `Ohio`
  
  */
-
+personalInfo.updateValue("USA", forKey: "country")
+personalInfo["city"] = "Cleveland"
+personalInfo["state"] = "Ohio"
+print(personalInfo)
+print("------------")
 
 /*:
  
@@ -41,7 +52,10 @@
  
  */
 
-
+personalInfo.removeValue(forKey: "city")
+personalInfo["state"] = nil
+print(personalInfo)
+print("------------")
 
 /*:
  
@@ -51,8 +65,12 @@
  
  */
 
+for i in personalInfo {
+    print("\(i.key) : \(i.value)")
+}
 
-
-
+for (key, value) in personalInfo {
+    print("\(key) : \(value)")
+}
 
 //: [⇒ Next: 05 - Working with Sets](@next)
